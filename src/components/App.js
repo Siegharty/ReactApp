@@ -14,7 +14,7 @@ function App() {
     <div className="container-fluid">
       <Header />
       <Switch>
-        <Route path="/" exact component={Home} />
+        <Route path="/ReactApp" exact component={Home} />
         <Route path="/courses" component={Courses} />
         <Route path="/course/:slug" component={ManageCourses} />
         <Route path="/course/" component={ManageCourses} />

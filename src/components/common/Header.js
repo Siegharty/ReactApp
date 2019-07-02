@@ -5,7 +5,7 @@ function Header() {
   const activeStyle = { color: "orange"};
   return (
     <nav>
-      <NavLink activeStyle={activeStyle} exact to="/">
+      <NavLink activeStyle={activeStyle} exact to="/ReactApp">
         Home
       </NavLink>
       {" | "}
