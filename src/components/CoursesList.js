@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 function CoursesList(props){
     return(
@@ -14,7 +15,7 @@ function CoursesList(props){
             {props.courses.map(courses => {
               return (
                 <tr key={courses.id}>
-                  <td>{courses.title}</td>
+                  <td><Link to={"/course/" + courses.slug}>{courses.title}</Link></td>
                   <td>{courses.authorId}</td>
                   <td>{courses.category}</td>
                 </tr>
