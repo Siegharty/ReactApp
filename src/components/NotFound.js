@@ -6,7 +6,7 @@ function NotFound(){
       <div>
         <h2>Not found page</h2>
         <p>
-          <Link to="/">Back to home</Link>
+          <Link to="/ReactApp">Back to home</Link>
         </p>
       </div>
     );
