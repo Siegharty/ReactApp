@@ -5,7 +5,7 @@ function SelectInput(props)
 {
     let wrapperClass = "form-group";
 
-    if (props.error.length > 0) {
+    if(props.error.length > 0) {
       wrapperClass += " has_error";
     }
     
@@ -22,14 +22,23 @@ function SelectInput(props)
             className="form-control"
             value={props.value}
           >
-            <option value="" />
-            <option value="1">Cory House</option>
-            <option value="2">Scott Allen</option>
+            <OptionInput />
           </select>
         </div>
         {props.error && (<div className="alert alert-danger">{props.error}</div>)}
       </div>
     );
+}
+
+function OptionInput(){
+  return(
+    <>
+    <option value="" />
+    <option value="1">Cory House</option>
+    <option value="2">Scott Allen</option>
+    </>
+  );
+
 }
 
 SelectInput.propTypes = {
@@ -42,6 +51,14 @@ SelectInput.propTypes = {
 };
 
 SelectInput.defaultProps = {
+  error: ""
+};
+
+OptionInput.propTypes = {
+  value: PropTypes.number
+};
+
+OptionInput.defaultProps = {
   error: ""
 };
 
