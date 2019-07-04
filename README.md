@@ -1,11 +1,9 @@
 ## Aplicacion web de ejemplo que permite la carga y modificacion de Cursos
 
 
-Para probarlo descargar el proyecto 
+Para probarlo es necesario tener Node JS 
 
-o 
-
-Abir la consola de comandos o terminal y ejecutar el siguiente comando
+Descargar el proyecto
 
 git clone https://github.com/Siegharty/ReactApp.git
 
